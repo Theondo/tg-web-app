@@ -5,13 +5,13 @@ export function useTelegram() {
     tg.close();
   }
 
-  const onToggleButton = () => {
-    tg.MainButton.isVisible ? tg.MainButton.hide() : tg.MainButton.show();
-  }
+  // const onToggleButton = () => {
+  //   tg.MainButton.isVisible ? tg.MainButton.hide() : tg.MainButton.show();
+  // }
 
   return {
     onClose,
-    onToggleButton,
+    // onToggleButton,
     tg,
     user: tg.initDataUnsafe?.user
   }
