@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import ProductList from 'pages/product-list';
 import Form from 'pages/form';
-import { ConfigRoutes } from '../shared/config/routes';
+import { ConfigRoutes } from 'shared/config/routes';
 
 const Pages = () => {
   return (
