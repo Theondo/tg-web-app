@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { FC, ReactNode } from 'react';
 
 import './Button.css'
 
-const Button = (props: any) => {
+interface IProps {
+  onClick: () => void;
+  className?: string;
+  children?: ReactNode;
+}
+
+const Button: FC<IProps> = (props) => {
   return (
-    <div>
+    <>
       <button {...props} className={'button' + props.className}></button>
-    </div>
+    </>
   );
 };
 
