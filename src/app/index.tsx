@@ -1,12 +1,8 @@
 import React, { useEffect } from 'react';
 import { useTelegram } from 'shared/hooks/useTelegram';
 
-const tg = window.Telegram.WebApp;
-
 function App() {
-  const onClose = () => {
-    tg.close();
-  }
+  const { tg, onClose } = useTelegram();
 
   useEffect(() => {
     tg.ready();
