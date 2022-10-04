@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useTelegram } from 'shared/hooks/useTelegram';
 
 const tg = window.Telegram.WebApp;
 
