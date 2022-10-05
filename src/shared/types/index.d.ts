@@ -11,6 +11,9 @@ declare global {
             username?: string;
           };
         };
+        onEvent: (eventType: string, eventHandler: () => any) => any;
+        offEvent: (eventType: string, eventHandler: () => any) => any;
+        sendData: (data: string) => any;
         MainButton: {
           color: string;
           disable: () => any;
